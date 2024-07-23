@@ -10,7 +10,7 @@ export default function Joke() {
   useEffect(
     ()=>{
       setLoading(true)
-       axios.get(https://jsonplaceholder.typicode.com/todos)
+       axios.get("https://jsonplaceholder.typicode.com/todos")
        .then((resp)=>{
         setJoke(resp.data)
         setLoading(false)
